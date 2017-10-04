@@ -8,9 +8,9 @@ puzzles.
 Enter initial number, available touches and target number,
 then it says which keys to press, in which order.
 
-Use it without install here: <https://alcalyn.github.io/calculator-the-game-solution-finder/>
+Use it without install here: <https://alcalyn.github.io/calculator-the-game-solution-finder/index.html>
 
-[![Open Calculator solution finder](https://github.com/alcalyn/calculator-the-game-solution-finder/blob/master/web-ui.png)](https://alcalyn.github.io/calculator-the-game-solution-finder/)
+[![Open Calculator solution finder](https://github.com/alcalyn/calculator-the-game-solution-finder/blob/master/web-ui.png)](https://alcalyn.github.io/calculator-the-game-solution-finder/index.html)
 
 Or use it locally with nodejs:
 
@@ -38,7 +38,7 @@ cd calculator-the-game-solution-finder/
 
 ## Usage
 
-Without installation: [Open it here](https://alcalyn.github.io/calculator-the-game-solution-finder/)
+Without installation: [Open it here](https://alcalyn.github.io/calculator-the-game-solution-finder/index.html)
 
 With install, you need nodejs:
 
