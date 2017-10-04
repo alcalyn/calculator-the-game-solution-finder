@@ -18,12 +18,14 @@ SOLUTION FOUND: [-4]  [/3]  [-4]  [-4]  [x-4]
 
 ## Install
 
-To use it locally, download it at [XXX]().
+To use it locally, [download it here](https://github.com/alcalyn/calculator-the-game-solution-finder/archive/master.zip)
+and extract it.
 
 Or, using git:
 
 ``` bash
-git clone XXX
+git clone git@github.com:alcalyn/calculator-the-game-solution-finder.git
+cd calculator-the-game-solution-finder/
 ```
 
 
@@ -35,6 +37,7 @@ With nodejs:
 node main.js [initial] [touches...] [target]
 
 # Examples:
+
 # I have 34, I have touches [-5] [+8] [/7] [+/-], and I need to reach 3
 node main.js 34 -5 +8 /7 +/- 3
 
