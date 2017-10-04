@@ -3,10 +3,51 @@
     <head>
         <title>Alcalyn - Calculator solution finder</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/all.css">
     </head>
     <body>
-        <script src="assets/css/bootstrap.min.css"></script>
+        <div class="container">
+            <h2>Alcalyn - Calculator solution finder</h2>
+
+            <p>
+                Enter your Calculator puzzle numbers, and click <b>Find!</b>
+                to display touches to press to win.
+            </p>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-addon">Initial</span>
+                        <input type="number" value="25" id="initial" class="form-control" placeholder="Number display at start" aria-label="Initial">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-addon">Target</span>
+                        <input type="number" value="4" id="target" class="form-control" placeholder="Number I want to reach to win" aria-label="Target">
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-addon">Touches</span>
+                        <input type="text" value="-4, x-4, /3, +/-, /8" id="touches" class="form-control" placeholder="Speparated by comma: +1, +/-, 6, 3 => 4, /2, ..." aria-label="Touches">
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-primary btn-lg" id="find">Find!</button>
+
+            <div id="solution">
+            </div>
+        </div>
+
+        <script src="assets/js/jquery-3.2.1.slim.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
         <script src="src.js"></script>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>

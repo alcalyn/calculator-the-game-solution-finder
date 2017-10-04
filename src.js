@@ -31,8 +31,7 @@ function treeSearch(initial, touches, target, log) {
         depth: 0,
         parent: null,
         touch: null,
-        value: initial,
-        childs: []
+        value: initial
     };
 
     var frontier = [root];
@@ -52,8 +51,7 @@ function treeSearch(initial, touches, target, log) {
                 depth: node.depth + 1,
                 parent: node,
                 touch: touch,
-                value: touch.press(node.value),
-                childs: []
+                value: touch.press(node.value)
             };
 
             if (child.depth > currentDepth) {
@@ -65,7 +63,6 @@ function treeSearch(initial, touches, target, log) {
                 return createPath(child);
             }
 
-            node.childs.push(child);
             frontier.push(child);
         }
     }

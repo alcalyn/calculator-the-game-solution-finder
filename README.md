@@ -1,11 +1,18 @@
 Calculator solution finder
 ==========================
 
-Calculate solutions for puzzles
-[Calculator: The Game](https://play.google.com/store/apps/details?id=com.sm.calculateme).
+Calculate solutions for
+[Calculator: The Game](https://play.google.com/store/apps/details?id=com.sm.calculateme)
+puzzles.
 
 Enter initial number, available touches and target number,
 then it says which keys to press, in which order.
+
+Use it without install here: <https://alcalyn.github.io/calculator-the-game-solution-finder/>
+
+[![Open Calculator solution finder](https://github.com/alcalyn/calculator-the-game-solution-finder/blob/master/web-ui.png)](https://alcalyn.github.io/calculator-the-game-solution-finder/)
+
+Or use it locally with nodejs:
 
 ``` bash
 node main.js 25 -4 x-4 /3 +/- /8 4
@@ -31,7 +38,9 @@ cd calculator-the-game-solution-finder/
 
 ## Usage
 
-With nodejs:
+Without installation: [Open it here](https://alcalyn.github.io/calculator-the-game-solution-finder/)
+
+With install, you need nodejs:
 
 ``` bash
 node main.js [initial] [touches...] [target]
@@ -49,13 +58,29 @@ node main.js 34 +/- "<<" +2 3
 
 | Name          | Format            | Examples              |
 |---------------|-------------------|-----------------------|
-| Sum or sub    | `+N` or `-N       | `+5`, `-2`            |
+| Sum or sub    | `+N` or `-N`      | `+5`, `-2`            |
 | Mul           | `xN`              | `x2`, `x-5`           |
 | Div           | `/N`              | `/2`, `/-5`           |
 | Replace       | `N => P`          | `1 => 2`, `25 => 36`  |
 | ShiftRight    | `<<`              | `<<`                  |
 | Opposite      | `+/-`             | `+/-`                 |
 | Unshift       | `N`               | `1`, `6`              |
+
+
+## Contributing
+
+Pull this library with:
+
+``` bash
+git clone git@github.com:alcalyn/calculator-the-game-solution-finder.git
+cd calculator-the-game-solution-finder/
+```
+
+Run tests with:
+
+``` bash
+node tests/test.js
+```
 
 
 ## License
